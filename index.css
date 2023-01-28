@@ -1,0 +1,220 @@
+@font-face {
+    font-family:'pop' ;
+    src: url('./fontes/Poppins-Bold.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main .disply{
+    display: none;
+}
+
+body{
+    outline: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 164, 219);
+    align-items:center;
+    display: flex;
+    justify-content: center;
+}
+
+.notes-bd{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 15px;
+    padding-top: 50px;
+    margin: 0 auto;
+    align-items: center;
+}
+.crd-note{
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.new-note{
+    border-radius: 7px;
+    background-color: white;
+    width: 350px;
+    height: 300px;
+
+}
+.new-note header{
+    box-shadow:0px 5px 7px 0px #b7b7b785;
+}
+.new{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 75%;
+}
+.new-note h1{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'pop';
+    color: rgb(0, 164, 219);
+}
+.btn-new:active{
+    width: 90px;
+    height: 90px;
+    font-size: 20px;
+}
+.btn-new{
+    border-radius: 50%;
+    border: 5px dashed rgb(0, 164, 219);
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(0, 164, 219);
+    font-family: 'pop';
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nov{
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+    height: 420px;
+    color: rgb(0, 164, 219);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    position: absolute;
+}
+.nov input{
+    margin-left: 9px;
+    border: 1px solid black;
+    height: 25px;
+    color: black;
+    outline: none;
+    width: 90%;
+}
+.nov h1{
+    margin-left: 9px;
+    padding-top: 10px;
+    font-family: 'pop';
+    font-size: 16px;
+}
+
+.nov textarea{
+    resize:none;
+    margin-left: 9px;
+    outline: none;
+    border: 1px solid black;
+    max-height:45%;
+    min-height: 45%;
+    background: transparent;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.nov button{
+    font-family: 'pop';
+    color: white;
+    height: 33px;
+    background-color: rgba(0, 164, 219, 0.688);
+    margin-left: 9px;
+    width: 92%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+
+.crd-note .head{
+    font-family: 'pop';
+    font-size: 20px;
+    color: rgb(0, 164, 219);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 7px 0px #b7b7b785;
+}
+
+.crd-note .head h1{
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.crd-note .body{
+    justify-content: center;
+    display: flex;
+    height: 70%;
+    cursor: pointer;
+}
+.crd-note .body .descri{
+    max-width: 90%;
+    font-size: 15px;
+    font-family: 'pop';
+    color: rgb(101, 97, 97);
+    text-align: center;
+}
+.nov .volt{
+    position: absolute;
+    cursor: pointer;
+    font-family: 'pop';
+    color: white;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    background-color: rgba(0, 164, 219, 0.688);
+    right: 19px;
+    top: 10px;
+    font-size: 14px;
+    width: 80px;
+}
+.footer{
+    margin-right: 9px;
+    justify-content:space-between;
+    display: flex;
+    font-size: 15px;
+    color: rgb(101, 97, 97);
+    font-family: 'pop';
+    box-shadow: 0px -5px 7px 0px #b7b7b785;
+    padding: 5px;
+}
+
+.footer span{
+    cursor: pointer;
+}
+
+.newnote{
+    background: rgba(10, 10, 10, 0.365);
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    position: absolute;
+}
+
+.setings{
+    color: rgb(101, 97, 97);
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    width: 100px;
+    border-radius: 5px;
+    right: 5px;
+    bottom: 25px;
+    position: absolute;
+    box-shadow: 0px 0px 5px 6px #ccc;
+    transition: all 1s ease-in-out;
+}
+
+.setings span{
+    cursor: pointer;
+}
